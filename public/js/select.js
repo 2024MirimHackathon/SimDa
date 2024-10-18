@@ -16,7 +16,7 @@ const images = {
 };
 
 function selectFruitClick(fruit, element) {
-    selectedFruit = fruit;
+    selectedFruit = fruit
 
     // 모든 선택 div의 이미지를 비활성화 이미지로 변경
     document.querySelectorAll('.select_div2 div').forEach(div => {
@@ -46,5 +46,5 @@ function selectFruitClick(fruit, element) {
 function nextBtnClick(event) {
     // 선택한 과일이 있을 때 페이지 이동
     event.preventDefault(); // 기본 폼 제출 동작 막기
-    location.href = 'next.html';
+    location.href = 'cardToImage.html';
 }
