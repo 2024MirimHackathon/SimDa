@@ -5,7 +5,7 @@ const router = express.Router();
 
 // 편지지 종류 저장
 router.post('/choose', async (req,res) => {
-    const { kind } = req.body;     // 알려주기
+    const { kind } = req.body;     
 
     try {
         const newLetter = await Letter.create({
@@ -16,7 +16,7 @@ router.post('/choose', async (req,res) => {
           });
 
         if(newLetter) {
-            res.render('index'); // 수정하기
+            res.status(200).json({ message : "편지지 종류 저장 성공"})
         }
     }
     catch(error) {
@@ -37,7 +37,7 @@ router.patch('/images/:id', async (req,res) => {
         );
 
         if(updatedPath) {
-            res.render('');     // 변경하기
+            res.status(200).json({ message : "이미지 경로 저장 성공" })
         }
     }
     catch(error) {
