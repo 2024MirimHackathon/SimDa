@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: #2F990B;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.farmer-image {
+    margin-bottom: 34px;
+}
+
+.title {
+    color: #5ca931;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content {
+    height: 117px;
+    width: 162px;
+}
+
+.to-text {
+    font-size: 14px;
+    color: #5ca931;
+}
+
+.apple-image {
+    width: 117px;
+    height: 109px;
+}
+
+.date-text {
+    font-size: 12px;
+    color: #999;
+}
+
+button {
+    width: 313px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    /* 버튼 전체 너비 사용 */
+    padding: 10px;
+    background-color: #4CAF50;
+    /* 배경색 */
+    color: white;
+    /* 텍스트 색상 */
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-top: 400px;
+    margin-left: 20px;
+    color: white;
+    /* 버튼을 아래쪽으로 이동 */
+}
+
+button:hover {
+    background-color: #4b8d27;
+}
