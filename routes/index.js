@@ -6,4 +6,14 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.get('/home', (req,res) => {
+    res.render('home');
+})
+
+/*
+router.post('/', (req, res) => {
+    res.json({ data: "??" });
+});
+*/
+
 module.exports = router;

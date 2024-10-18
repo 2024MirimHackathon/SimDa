@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/home.css">
+    <title>홈</title>
+</head>
+<body>
+    <form id="home_form">
+        <div id="icon"></div>
+        <p id="home_text">님<br>지금까지 심은 마음입니다.</p>
+        <div id="basket"></div>
+        <div id="click_icon"></div>
+
+        <div id="btn_div">
+            <button id="write_btn" onclick="makeBtnClick(event)">마음 전달하기</button>
+        </div>
+    </form>
+
+    <div class="container"></div>
+
+    <script src="../public/js/home.js">
+        function makeBtnClick() {
+            // select.html로 페이지 전환
+            location.href = 'select.html';
+        }
+    </script>
+</body>
+</html>

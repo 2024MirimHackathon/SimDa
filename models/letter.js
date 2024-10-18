@@ -1,4 +1,5 @@
 const { DataTypes } = require("sequelize");
+const { removeTicks } = require("sequelize/lib/utils");
 
 const Letter = (sequelize) => 
   sequelize.define(
@@ -11,7 +12,7 @@ const Letter = (sequelize) =>
         allowNull: false,
       },
       date: {
-        type: DataTypes.DATEONLY,
+        type: DataTypes.STRING(100),
         allowNull: false,
       },
       dear: {
@@ -31,5 +32,5 @@ const Letter = (sequelize) =>
       timestamps: false, 
     }
   );
-
+  
 module.exports = Letter;

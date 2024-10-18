@@ -2,18 +2,23 @@ const express = require("express");
 const sequelize = require("./config/config");
 const cors = require('cors');
 const path = require('path');
+const cookieParser = require('cookie-parser');
 const app = express();
 
-const PORT = 3000;
+const PORT = 3001;
 
 // set engine
 app.set("view engine", "ejs");
 // parser
 app.use(express.urlencoded({extended: true}));
-app.use(express.json);
+app.use(express.json());
+app.use(cookieParser());
 
 // 라우터 불러오기
 const indexRouter = require('./routes/index');
+const signRouter = require('./routes/sign');
+const letterRouter = require('./routes/letters');
+const dictRouter = require('./routes/dict');
 
 // true : 서버 실행 시 테이블 재생성
 sequelize.sync({force: true}).then(() => {
@@ -30,6 +35,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // router use()
 app.use("/", indexRouter);
+app.use("/sign", signRouter);
+app.use('/letters', letterRouter);
+app.use('/dicts', dictRouter);
 
 app.listen(PORT, () => {
   console.log(`${PORT}포트에서 서버 실행`);
