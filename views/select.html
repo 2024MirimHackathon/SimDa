@@ -8,8 +8,8 @@
     <style>
         .selected {
             color: white;
+            background-color: #4CAF50; /* 선택 시 색상 변경 */
         }
-
         .warning {
             color: red;
             margin: 10px 0;
@@ -18,14 +18,16 @@
 </head>
 <body>
     <form class="select_form">
-        <p id="select_text">전하고 싶은 마음을 골라보세요</p>
+        <div id="icon"></div>
+        <p id="select_num">1/2</p>
+        <p id="select_text">어떤 과일을 심으시겠어요?</p>
         <div class="select_div2">
-            <button id="select_gam" onclick="selectFruitClick('감', this, event)">감</button>
-            <button id="select_apple" onclick="selectFruitClick('사과', this, event)">사과</button>
-            <button id="select_dragon" onclick="selectFruitClick('용과', this, event)">용과</button>
-    
+            <div id="select_apple" onclick="selectFruitClick('사과', this)" style="background-image: url('../public/images/unselected_app.png');"></div>
+            <div id="select_gam" onclick="selectFruitClick('감', this)" style="background-image: url('../public/images/unselected_gam.png');"></div>
+            <div id="select_dragon" onclick="selectFruitClick('용과', this)" style="background-image: url('../public/images/unselected_dra.png');"></div>
+
             <div id="warningMessage" class="warning"></div>
-            <button id="nextBtn" onclick="nextBtnClick(event)">다음</button>
+            <button id="nextBtn" onclick="nextBtnClick(event)" disabled>다음</button>
         </div>
     </form>
 
