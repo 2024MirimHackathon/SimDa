@@ -6,43 +6,61 @@ body {
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100px;
 }
 
-.header {
+#signup-section {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    flex: 1;
+    margin-top: 0;
+    /* 상단 여백 제거 */
 }
 
-.farmer-image {
+.openingText-container {
+    margin-bottom: 28px;
+}
+
+img.farmer-image {
     margin-bottom: 34px;
 }
 
-.title {
-    color: #5ca931;
-    font-size: 16px;
-    line-height: 1.5;
+img.arrow-image {
+    float: right;
 }
 
-.content {
-    height: 117px;
-    width: 162px;
+label {
+    margin-top: 10px;
+    /* 라벨과 입력란 간의 간격 */
+    font-weight: bold;
 }
-
-.to-text {
+div.to-text {
     font-size: 14px;
-    color: #5ca931;
+    color: #000000;
+    width: 146px;
 }
-
-.apple-image {
-    width: 117px;
-    height: 109px;
-}
-
 .date-text {
-    font-size: 12px;
-    color: #999;
+    font-size: 10px;
+    color: #000000;
+    margin: 0;
+    text-align: right;
+}
+input {
+    font-weight: 600;
+    font-size: 16px;
+    width: 280px;
+    height: 30px;
+    /* 입력란 전체 너비 사용 */
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* 입력란 간 간격 */
+    background-color: #E3E3E3;
+    color: #696969;
+    border: none;
+    border-radius: 26px;
 }
 
 button {
@@ -59,12 +77,13 @@ button {
     border: none;
     border-radius: 27px;
     cursor: pointer;
-    margin-top: 400px;
+    margin-top: 300px;
     margin-left: 20px;
     color: white;
     /* 버튼을 아래쪽으로 이동 */
 }
 
 button:hover {
-    background-color: #4b8d27;
+    background-color: #45a049;
+    /* 버튼 호버 색상 */
 }

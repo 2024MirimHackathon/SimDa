@@ -8,8 +8,13 @@
     <style>
         .selected {
             color: white;
+<<<<<<< HEAD
         }
 
+=======
+            background-color: #4CAF50; /* 선택 시 색상 변경 */
+        }
+>>>>>>> d0dad8e5d1d6c812fafb7c350276c2cd0574ec8a
         .warning {
             color: red;
             margin: 10px 0;
@@ -17,6 +22,7 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <nav class="select_div1">
         <h1>과일 선택</h1>
         <div class="select_div2">
@@ -57,5 +63,23 @@
         }
     </script>
 
+=======
+    <form class="select_form">
+        <div id="icon"></div>
+        <p id="select_num">1/2</p>
+        <p id="select_text">어떤 과일을 심으시겠어요?</p>
+        <div class="select_div2">
+            <div id="select_apple" onclick="selectFruitClick('사과', this)" style="background-image: url('../public/images/unselected_app.png');"></div>
+            <div id="select_gam" onclick="selectFruitClick('감', this)" style="background-image: url('../public/images/unselected_gam.png');"></div>
+            <div id="select_dragon" onclick="selectFruitClick('용과', this)" style="background-image: url('../public/images/unselected_dra.png');"></div>
+
+            <div id="warningMessage" class="warning"></div>
+            <button id="nextBtn" onclick="nextBtnClick(event)" disabled>다음</button>
+        </div>
+    </form>
+
+    <!-- JavaScript 파일을 불러오는 부분 -->
+    <script src="../public/js/select.js"></script>
+>>>>>>> d0dad8e5d1d6c812fafb7c350276c2cd0574ec8a
 </body>
 </html>

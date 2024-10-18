@@ -111,7 +111,8 @@ router.post('/signup', async (req, res) => {    // 회원가입(사용자 데이
 
 
 
-router.post('/login', async (req, res) => {     // 로그인(사용자 데이터 조회)
+router.post('/login', async (req, res) => { 
+    print('login post');    // 로그인(사용자 데이터 조회)
     const { username, password } = req.body;
     const user = await fetchUser(username);
 
