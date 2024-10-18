@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <title>로그인</title>
+</head>
+
+<body>
+    <!-- 로그인 섹션 -->
+    <section class="login-section">
+        <h2>Login</h2>
+        <form id="login-form" action="/login" method="POST"> <!-- 폼 태그 추가 -->
+            <section class="login-info">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required>
+                <span id="name-error" style="color: red;"></span> <!-- 오류 메시지 공간 -->
+
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id" required>
+                <span id="id-error" style="color: red;"></span> <!-- 오류 메시지 공간 -->
+
+                <label for="password">PW</label>
+                <input type="password" id="password" name="password" required>
+                <span id="password-error" style="color: red;"></span> <!-- 오류 메시지 공간 -->
+            </section>
+            <button type="submit" id="login-button">Login</button> <!-- ID 추가 -->
+        </form>
+    </section>
+    <script src="/public/js/login.js"></script>
+</body>
+
+</html>
