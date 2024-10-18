@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/select.css">
+    <title>과일 선택</title>
+    <style>
+        .selected {
+            color: white;
+        }
+
+        .warning {
+            color: red;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form class="select_form">
+        <p id="select_text">전하고 싶은 마음을 골라보세요</p>
+        <div class="select_div2">
+            <button id="select_gam" onclick="selectFruitClick('감', this, event)">감</button>
+            <button id="select_apple" onclick="selectFruitClick('사과', this, event)">사과</button>
+            <button id="select_dragon" onclick="selectFruitClick('용과', this, event)">용과</button>
+    
+            <div id="warningMessage" class="warning"></div>
+            <button id="nextBtn" onclick="nextBtnClick(event)">다음</button>
+        </div>
+    </form>
+
+    <!-- JavaScript 파일을 불러오는 부분 -->
+    <script src="../public/js/select.js"></script>
+</body>
+</html>
