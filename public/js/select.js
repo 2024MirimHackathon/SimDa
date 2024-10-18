@@ -16,7 +16,7 @@ const images = {
 };
 
 function selectFruitClick(fruit, element) {
-    selectedFruit = fruit;
+    selectedFruit = fruit
 
     // 모든 선택 div의 이미지를 비활성화 이미지로 변경
     document.querySelectorAll('.select_div2 div').forEach(div => {
