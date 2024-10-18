@@ -48,8 +48,15 @@ router.post('/signup', async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
 // 로그인(사용자 데이터 조회)
 router.post('/login', async (req, res) => {
+=======
+
+
+router.post('/login', async (req, res) => { 
+    print('login post');    // 로그인(사용자 데이터 조회)
+>>>>>>> a57162c5270390f48967d53b8ef36705fcf5af24
     const { username, password } = req.body;
     console.log(username);
 

@@ -19,8 +19,8 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    bottom: 90px;
-    left: 85px;
+    bottom: 130px;
+    left: 95px;
 
     background-size: contain; /* 비율 유지 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
@@ -46,7 +46,7 @@
     background-position: center; /* 이미지를 가운데에 위치시킴 */
     width: 217.05px;
     height: 143.62px;
-    margin: 190px auto 0;
+    margin: 240px auto 0;
 }
 
 #write_btn {
@@ -58,6 +58,7 @@
     bottom: 70px;
     background-color: #56AC38;
     color: white;
+    font-size: 18px;
 }
 
 #btn_div {
@@ -103,3 +104,5 @@ body {
         top: calc(100% - 160px); /* 끝 위치 (container의 하단) */
     }
 }
+
+
