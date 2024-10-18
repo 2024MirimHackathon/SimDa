@@ -1,7 +1,11 @@
-.select_div1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#icon {
+    background-image: url('../images/logo.png');
+    width: 70px;
+    height: 65px;
+    margin: 40px 5% 0;
+    background-size: contain; /* 비율 유지 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    background-position: center;
 }
 
 .select_div2 {
@@ -11,21 +15,56 @@
     gap: 10px;
 }
 
-#select_gam, #select_apple, #select_dragon {
-    width: 200px;
-    height: 150px;
-    background-color: grey;
-    border: none;
+#select_num {
+    color: #B5D8A9;
+    margin: 26px 7% 0;
 }
 
-/* #select_gam {
-    background-image: ;
+#select_text {
+    color: #2F990B;
+    margin: 0 7% 5%;
+    font-size: 22px;
+}
+
+#select_gam, #select_apple, #select_dragon {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain; /* 비율 유지 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    background-position: center;
+}
+
+#nextBtn:disabled {
+    background-color: #B5D8A9; /* 비활성화된 버튼 색상 */
+    cursor: not-allowed; /* 비활성화 시 마우스 커서 변경 */
+}
+
+#nextBtn {
+    background-color: #56AC38; /* 활성화된 버튼 색상 */
+    cursor: pointer;
+    width: 300px;
+    height: 54px;
+    border: none;
+    border-radius: 27px;
+    position: absolute;
+    bottom: 70px;
+    color: white;
+}
+
+#select_gam {
+    width: 139px;
+    height: 122px;
 }
 
 #select_apple {
-    background-image: ;
+    background-image: url('../images/select_apple.png');
+    width: 126px;
+    height: 119px;
 }
 
 #select_dragon {
-    background-image: ;
-} */
+    background-image: url('../images/select_dragon.png');
+    width: 140px;
+    height: 132px;
+    margin: 0;
+}
