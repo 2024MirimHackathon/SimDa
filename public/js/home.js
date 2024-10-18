@@ -47,3 +47,32 @@ function createFruitDiv(fruit) {
     // 애니메이션 클래스 추가
     fruitDiv.style.animation = 'fall 3s forwards'; // 떨어지는 애니메이션
 }
+
+// 로그인한 사용자의 id를 설정합니다. (예를 들어, 로그인 후 저장된 사용자 id를 사용)
+var userName = '';
+
+
+// 서버에서 해당 userId의 name을 가져오는 함수
+async function fetchUserame(id, password) {
+    try {
+        const response = await fetch(`/sign/${id}/${password}`);
+        if (response.ok) {
+            const data = await response.json();
+            userName = data.name;
+            // 가져온 사용자 이름으로 환영 메시지를 설정
+            document.getElementById('greeting').innerText = `${userName}님! 안녕하세요!`;
+        } else {
+            document.getElementById('greeting').innerText = '사용자를 찾을 수 없습니다.';
+        }
+    } catch (error) {
+        console.error('Error fetching user name:', error);
+        document.getElementById('greeting').innerText = '오류가 발생했습니다.';
+    }
+}
+
+// func2() {
+//     print(userName);
+// }
+
+// 페이지가 로드되면 fetchUserName 함수 실행
+window.onload = fetchUserName;
