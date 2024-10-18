@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 37px;
+}
+
+#cursor {
+    font-weight: bold;
+    display: inline;
+    margin-left: 30px;
+}
+
+#person-img {
+    margin-bottom: 26px;
+}
+
+#progress {
+    color: #B5D8A9;
+    padding-bottom: 7px;
+    font-weight: 600;
+}
+
+.to-field-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+#main-section {
+    margin-top: 61.3px;
+    flex: 1;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.letter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex: 1; */
+}
+
+#apple-letter {
+    width: 392px;
+    height: 365px;
+    margin-right: 40px;
+    /* margin-bottom: 143px; */
+}
+
+.text-container {
+    color: #45a049;
+    font-size: 22px;
+}
+
+.letter-inputs {
+    position: absolute;
+    top: 36%;
+    left: 25%;
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    margin-right: 16px;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.from-field-container {
+    display: flex;
+    align-items: center;
+
+    margin-left: 200px;
+    /* margin-bottom: 60px;/ */
+    font-size: 16px;
+    position: absolute;
+    /* bottom: 330px; */
+    top: 480px;
+}
+
+#cursor2 {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+
+#to-field {
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.letter-field {
+    outline: none;
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-right: 50px;
+    position: absolute;
+}
+
+button {
+    height: 54px;
+    border-radius: 27px;
+    background-color: #45a049;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 90px;
+}
+
+/* writeLetter.css */
+#ptag {
+    margin-top: 20px;
+}
+
+/* 기본 버튼 스타일 */
+#save-button {
+    width: 330px;
+    background-color: #B5D8A9;
+    /* 비활성화 시 기본 색상 */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: not-allowed;
+    /* 비활성화 시 커서 변경 */
+}
+
+#cursor-container {
+    position: relative;
+    margin-top: 10px;
+    /* 위쪽으로 10px 띄움 */
+    right: 130px;
+    /* 왼쪽으로 20px 띄움 */
+}
+
+/* 활성화된 버튼 스타일 */
+#save-button.active {
+    background-color: #45a049;
+    /* 활성화 시 변경될 색상 */
+    cursor: pointer;
+    /* 활성화 시 커서 변경 */
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    /* 기본적으로 숨김 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 반투명한 배경 */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    /* 기본적으로 숨김 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 반투명한 배경 */
+}
+
+.modal-content {
+    background-color: #d3d3d3;
+    /* 회색 배경 */
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    /* 둥근 모서리 50px */
+    font-size: 18px;
+    color: black;
+
+    /* 세로 방향으로 배치 */
+
+    /* 수직 중앙 정렬 */
+
+    /* 수평 중앙 정렬 */
+
+    /* 모달 내용 높이 조정 (필요에 따라 조정) */
+
+    /* 텍스트는 검은색 */
+}
+
+button#closeModalBtn {
+    background-color: #d3d3d3;
+    /* 버튼 배경 회색 */
+    color: black;
+    /* 버튼 텍스트 검은색 */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+button#closeModalBtn:hover {
+    background-color: #c0c0c0;
+    /* 호버 시 약간 어두운 회색 */
+}
