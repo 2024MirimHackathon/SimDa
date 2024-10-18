@@ -7,8 +7,16 @@ const User = sequelize => sequelize.define("User", {
     autoIncrement: true,
     allowNull: false
   },
+  userId: {
+    type: DataTypes.STRING(100),
+    allowNull: false
+  },
+  name: {
+    type: DataTypes.STRING(100),
+    allowNull: false
+  },
   password: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING(100),
     allowNull: false
   },
   timestamps: false,
