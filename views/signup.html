@@ -14,13 +14,15 @@
         <img src="/public/images/index페이지 농부 사진.png" alt="">
         <div class="openingText-container">
             <span class="underline">반가워요!</span>
-            <div class="text-container">
+            <!-- <div class="text-container">
                 <span class="underline">이름을 적어주세요</span>
-            </div>
+            </div> -->
         </div>
         <form id="signup-form" action="signup-id.html" method="GET">
             <!-- action="#" to prevent default submission -->
             <input type="text" id="name" name="name" placeholder="이름을 입력해주세요." required>
+            <input type="text" id="name" name="name" placeholder="아이디를 입력해주세요." required>
+            <input type="text" id="name" name="name" placeholder="비밀번호를 입력해주세요." required>
             <span id="name-error" style="color: red;"></span>
             <button type="submit">다음</button>
         </form>
