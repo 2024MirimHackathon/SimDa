@@ -6,4 +6,10 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+/*
+router.post('/', (req, res) => {
+    res.json({ data: "??" });
+});
+*/
+
 module.exports = router;
