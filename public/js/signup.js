@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 이름 입력 폼
-    document.getElementById("name-form").addEventListener("submit", function (event) {
+    document.getElementById("signup-form").addEventListener("submit", function (event) {
         var name = document.getElementById("name").value;
         var nameError = document.getElementById("name-error");
         nameError.textContent = ""; // 오류 메시지 초기화

@@ -6,7 +6,7 @@ body {
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100px;
 }
 
 #signup-section {
@@ -23,8 +23,12 @@ body {
     margin-bottom: 28px;
 }
 
-img {
+img.farmer-image {
     margin-bottom: 34px;
+}
+
+img.arrow-image {
+    float: right;
 }
 
 label {
@@ -32,7 +36,17 @@ label {
     /* 라벨과 입력란 간의 간격 */
     font-weight: bold;
 }
-
+div.to-text {
+    font-size: 14px;
+    color: #000000;
+    width: 146px;
+}
+.date-text {
+    font-size: 10px;
+    color: #000000;
+    margin: 0;
+    text-align: right;
+}
 input {
     font-weight: 600;
     font-size: 16px;
@@ -63,7 +77,8 @@ button {
     border: none;
     border-radius: 27px;
     cursor: pointer;
-    margin-top: 436px;
+    margin-top: 300px;
+    margin-left: 20px;
     color: white;
     /* 버튼을 아래쪽으로 이동 */
 }
