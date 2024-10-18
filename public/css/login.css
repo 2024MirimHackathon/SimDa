@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: #2F990B;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    flex: 1;
+    margin-top: 0;
+    /* 상단 여백 제거 */
+}
+
+.openingText-container {
+    margin-bottom: 28px;
+}
+
+img {
+    margin-bottom: 34px;
+}
+
+label {
+    margin-top: 10px;
+    /* 라벨과 입력란 간의 간격 */
+    font-weight: bold;
+}
+
+input {
+    font-weight: 600;
+    font-size: 16px;
+    width: 280px;
+    height: 30px;
+    /* 입력란 전체 너비 사용 */
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* 입력란 간 간격 */
+    background-color: #E3E3E3;
+    color: #696969;
+    border: none;
+    border-radius: 26px;
+}
+
+button {
+    width: 313px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    /* 버튼 전체 너비 사용 */
+    padding: 10px;
+    background-color: #4CAF50;
+    /* 배경색 */
+    color: white;
+    /* 텍스트 색상 */
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    margin-top: 436px;
+    color: white;
+    /* 버튼을 아래쪽으로 이동 */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* 버튼 호버 색상 */
+}
