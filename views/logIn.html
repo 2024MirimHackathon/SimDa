@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+
+<body>
+    <!-- 회원가입 -->
+
+    <section id="signup-section">
+        <h2>Sign Up</h2>
+        <!-- action="/register 회원가입 데이터를 처리할 서버의 경로" -->
+        <!-- POST : 데이터를 서버에 전송 새로운 데이터를 생성 -->
+        <form action="/register" method="POST"></form>
+        <section class="basic-info">
+            <label for="name">Name</label>
+            <!-- required : 입력 필드 필수 -->
+            <input type="text" id="name" name="name" required>
+
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
