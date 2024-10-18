@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/signup.css">
+    <title>회원가입-아이디 입력</title>
+</head>
+
+<body>
+    <!-- 회원가입 -->
+    <section id="signup-section">
+        <img src="/public/images/index페이지 농부 사진.png" alt="">
+        <div class="openingText-container">
+            <span class="underline">심다에서 사용할</span>
+            <div class="text-container">
+                <span class="underline">아이디를 입력해주세요</span>
+            </div>
+        </div>
+        <!-- action="/register 회원가입 데이터를 처리할 서버의 경로" -->
+        <!-- POST : 데이터를 서버에 전송 새로운 데이터를 생성 -->
+        <form id="signup-form" action="signup-password.html" method="GET">
+            <input type="text" id="id" name="id" placeholder="아이디를 입력해주세요." required>
+            <span id="id-error" style="color: red;"></span>
+            <button type="submit">다음</button>
+        </form>
+
+    </section>
+
+    <button type="submit">Sign Up</button>
+    </form>
+    </section>
+    <script src="/public/js/signup-id.js"></script>
+</body>
+
+</html>
