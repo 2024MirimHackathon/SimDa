@@ -4,35 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/sginup.css">
     <title>회원가입</title>
 </head>
 
 <body>
     <!-- 회원가입 -->
-
     <section id="signup-section">
         <h2>Sign Up</h2>
         <!-- action="/register 회원가입 데이터를 처리할 서버의 경로" -->
         <!-- POST : 데이터를 서버에 전송 새로운 데이터를 생성 -->
-        <form action="/register" method="POST"></form>
-        <section class="basic-info">
-            <label for="name">Name</label>
-            <!-- required : 입력 필드 필수 -->
-            <input type="text" id="name" name="name" required>
+        <form id="signup-form" action="/register" method="POST">
+            <section class="basic-info">
+                <label for="name">이름</label>
+                <!-- required : 입력 필드 필수 -->
+                <input type="text" id="name" name="name" required>
+                <span id="name-error" style="color: red;"></span> <!-- 오류 메시지 추가 -->
 
-            <label for="id">ID</label>
-            <input type="text" id="id" name="id" required>
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id" required>
+                <span id="id-error" style="color: red;"></span>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+                <label for="password">PW</label>
+                <input type="password" id="password" name="password" required>
+                <span id="password-error" style="color: red;"></span>
 
-            <label for="confirm-password"></label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </section>
+                <label for="confirm-password">비밀번호 확인</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span id="confirm-password-error" style="color: red;"></span>
+            </section>
 
-        <button type="submit">Sign Up</button>
-
+            <button type="submit">Sign Up</button>
+        </form>
     </section>
+    <script src="/public/js/sginup.js"></script>
 </body>
 
 </html>
