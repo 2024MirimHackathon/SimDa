@@ -23,7 +23,7 @@ fruits.forEach((fruit, index) => {
     // 각 div가 떨어지는 시간을 주기 위해 setTimeout 사용
     setTimeout(() => {
         createFruitDiv(fruit);
-    }, index * 1000);
+    }, index * 1000)
 });
 
 // 과일 div 생성 함수
