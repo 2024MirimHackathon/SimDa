@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/writeLetter.css">
+    <title>편지 작성</title>
+</head>
+
+<body>
+    <section id="main-section">
+        <img id="person-img" src="/public/images/index페이지 농부 사진.png" alt="">
+        <div id="progress">2/2</div>
+        <div class="text-container">
+            과일에 담을 내용을 작성해주세요.
+        </div>
+        <div id="capture" class="letter-container">
+            <img id="apple-letter" src="/public/images/사과레터.png" alt="">
+            <div class="letter-inputs">
+                <div class="to-field-container">
+                    <p>To.</p>
+                    <input type="text">
+                    <input type="text" id="cursor2">
+                </div>
+            </div>
+            <div class="from-field-container">
+                <p>From.</p>
+                <input type="text" id="from-field" placeholder="김예린" readonly />
+                <div id="date-field" style="margin-top: 10px;"></div>
+            </div>
+        </div>
+        <button type="submit" id="save-button" disabled>저장하기</button>
+        <!-- 모달 창 HTML -->
+        <!-- 모달 창 HTML (X 버튼 없음) -->
+        <div id="saveModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <p id="ptag">이미지가 저장되었습니다!</p>
+                <button id="closeModalBtn">확인</button>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="/public/js/writeLetter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+
+
+</body>
+
+</html>

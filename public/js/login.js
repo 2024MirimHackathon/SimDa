@@ -30,13 +30,13 @@ document.getElementById("login-form").addEventListener("submit", function (event
 });
 
 async function login() {
-  var id = document.getElementById("id").value;
-//   var password = document.getElementById("password").value;
+  // var id = document.getElementById("id").value;
+  // var password = document.getElementById("password").value;
 
-//   console.log(id);
-//   await fetch("http://localhost:3001/sign/login", {
-//     method: "POST",
-//     body: JSON.stringify({userId: id, password: password})
-//   });
+  console.log(id);
+  await fetch("sign/login", {
+    method: "POST",
+    body: JSON.stringify({username: id, password: password})
+  });
     location.href = "../views/home.html";
 }

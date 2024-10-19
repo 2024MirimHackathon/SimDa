@@ -55,7 +55,7 @@ var userName = '';
 // 서버에서 해당 userId의 name을 가져오는 함수
 async function fetchUserame(id, password) {
     try {
-        const response = await fetch(`/sign/${id}/${password}`);
+        const response = await fetch(`/sign/${id}`);
         if (response.ok) {
             const data = await response.json();
             userName = data.name;
