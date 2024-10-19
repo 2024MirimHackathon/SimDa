@@ -93,6 +93,7 @@ function showSaveModal() {
 document.getElementById("closeModalBtn").addEventListener("click", function () {
     const modal = document.getElementById("saveModal");
     modal.style.display = "none"; // 모달 창 숨기기
+    location.href = 'home.html';
 });
 
 

@@ -16,13 +16,20 @@
             </div>
         </div>
     
-        <div class="content">
-            <div class="to-text">To. 수민</div> <img src="/public/images/화살표.png" alt="" class="arrow-image">
+        <div class="content" onclick="dicBtnClick()">
+            <div class="to-text">To. 수민</div> 
+            <img src="/public/images/화살표.png" alt="" class="arrow-image">
             <img src="/public/images/사과.png" alt="Apple Image" class="apple-image">
             <p class="date-text">2023.05.12</p>
         </div>
     </section>
-        <button class="home-button">홈으로 돌아가기</button>
-    </div>
+    <button onclick="BackBtnClick(event)" class="home-button">홈으로 돌아가기</button>
+
+    <script src="../public/js/dictionary.js">
+        function makeBtnClick() {
+            // select.html로 페이지 전환
+            location.href = 'home.html';
+        }
+    </script>
 </body>
 </html>

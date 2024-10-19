@@ -3,6 +3,10 @@ function makeBtnClick(event) {
     location.href = 'select.html';
 }
 
+function basketBtn(event) {
+    event.preventDefault(); // 기본 폼 제출 동작 막기
+    location.href = 'dictionary.html';
+}
 
 // 사과, 용과, 감에 해당하는 이미지 경로
 const images = {
