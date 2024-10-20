@@ -46,5 +46,9 @@ function selectFruitClick(fruit, element) {
 function nextBtnClick(event) {
     // 선택한 과일이 있을 때 페이지 이동
     event.preventDefault(); // 기본 폼 제출 동작 막기
+<<<<<<< HEAD
+    location.href = 'writeLetter.html';
+=======
     location.href = 'cardToImage.html';
+>>>>>>> f072682e0df6438cd60f6f417e7aecddb4c99338
 }

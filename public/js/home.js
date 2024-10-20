@@ -3,6 +3,10 @@ function makeBtnClick(event) {
     location.href = 'select.html';
 }
 
+function basketBtn(event) {
+    event.preventDefault(); // 기본 폼 제출 동작 막기
+    location.href = 'dictionary.html';
+}
 
 // 사과, 용과, 감에 해당하는 이미지 경로
 const images = {
@@ -55,7 +59,7 @@ var userName = '';
 // 서버에서 해당 userId의 name을 가져오는 함수
 async function fetchUserame(id, password) {
     try {
-        const response = await fetch(`/sign/${id}/${password}`);
+        const response = await fetch(`/sign/${id}`);
         if (response.ok) {
             const data = await response.json();
             userName = data.name;

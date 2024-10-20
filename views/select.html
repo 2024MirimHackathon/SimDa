@@ -8,13 +8,12 @@
     <style>
         .selected {
             color: white;
-<<<<<<< HEAD
-        }
-
-=======
             background-color: #4CAF50; /* 선택 시 색상 변경 */
         }
+<<<<<<< HEAD
+=======
 >>>>>>> 0652f91ac7e166b758ec511349d5f982070fdae6
+>>>>>>> f072682e0df6438cd60f6f417e7aecddb4c99338
         .warning {
             color: red;
             margin: 10px 0;
@@ -22,48 +21,6 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-    <nav class="select_div1">
-        <h1>과일 선택</h1>
-        <div class="select_div2">
-            <button id="select_gam" onclick="selectFruitClick('감', this)">감</button>
-            <button id="select_apple" onclick="selectFruitClick('사과', this)">사과</button>
-            <button id="select_dragon" onclick="selectFruitClick('용과', this)">용과</button>
-        </div>
-    
-        <div id="warningMessage" class="warning"></div>
-        <button id="nextBtn" onclick="nextBtnClick()">다음</button>
-    </nav>
-
-    <script>
-        let selectedFruit = "";
-
-        // 과일 선택 함수
-        function selectFruitClick(fruit, element) {
-            selectedFruit = fruit;
-            console.log("selectedFruit: " + selectedFruit);
-
-            // 선택 시 경고 메시지를 비움
-            document.getElementById('warningMessage').textContent = "";
-
-            document.querySelectorAll('.select_div1 button').forEach(button => {
-                button.classList.remove('selected');
-            });
-
-            element.classList.add('selected');
-        }
-
-        // 다음 버튼 함수
-        function nextBtnClick() {
-            if (selectedFruit === "") {
-                document.getElementById('warningMessage').textContent = "과일을 선택해 주세요";
-                return; // 선택되지 않았을 때 함수 종료
-            }
-            location.href = 'next.html';
-        }
-    </script>
-
-=======
     <form class="select_form">
         <div id="icon"></div>
         <p id="select_num">1/2</p>
@@ -80,6 +37,9 @@
 
     <!-- JavaScript 파일을 불러오는 부분 -->
     <script src="../public/js/select.js"></script>
+<<<<<<< HEAD
+=======
 >>>>>>> 0652f91ac7e166b758ec511349d5f982070fdae6
+>>>>>>> f072682e0df6438cd60f6f417e7aecddb4c99338
 </body>
 </html>

@@ -9,8 +9,8 @@
 <body>
     <form id="home_form">
         <div id="icon"></div>
-        <p id="home_text">님<br>지금까지 심은 마음입니다.</p>
-        <div id="basket"></div>
+        <p id="home_text">예린님<br>지금까지 심은 마음입니다.</p>
+        <a href="/views/dictionary.html"><div id="basket" onclick="basketBtn(event)" ></div></a>
         <div id="click_icon"></div>
 
         <div id="btn_div">
@@ -24,6 +24,9 @@
         function makeBtnClick() {
             // select.html로 페이지 전환
             location.href = 'select.html';
+        }
+        function basketBtn() {
+            location.href = 'dictionary.html';
         }
     </script>
 </body>
